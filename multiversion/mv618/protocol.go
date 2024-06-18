@@ -19,6 +19,10 @@ func (Protocol) Ver() string {
 	return "1.20.30"
 }
 
+func (Protocol) Encryption(key [32]byte) gtpacket.Encryption {
+	return gtpacket.NewCTREncryption(key[:])
+}
+
 func (Protocol) NewReader(r minecraft.ByteReader, shieldID int32, enableLimits bool) protocol.IO {
 	return protocol.NewReader(r, shieldID, enableLimits)
 }

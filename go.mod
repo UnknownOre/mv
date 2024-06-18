@@ -10,7 +10,6 @@ require (
 	github.com/pelletier/go-toml v1.9.5
 	github.com/sandertv/gophertunnel v1.38.0
 	github.com/sirupsen/logrus v1.9.3
-	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f
 )
 
 require (
@@ -27,11 +26,14 @@ require (
 	github.com/segmentio/fasthash v1.0.3 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
 	golang.org/x/crypto v0.24.0 // indirect
+	golang.org/x/exp v0.0.0-20240205201215-2c58cdc269a3 // indirect
 	golang.org/x/image v0.17.0 // indirect
 	golang.org/x/net v0.26.0 // indirect
 	golang.org/x/oauth2 v0.21.0 // indirect
 	golang.org/x/sys v0.21.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 )
+
+replace github.com/sandertv/gophertunnel v1.38.0 => github.com/oomph-ac/gophertunnel v0.0.0-20240616183157-9a90927ebb22
 
 replace github.com/sandertv/go-raknet v1.13.0 => github.com/tedacmc/tedac-raknet v0.0.4
